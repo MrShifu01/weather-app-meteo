@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css2?family=Denk+One&display=swap');
+
+*,
+*::after,
+*::before {
+    box-sizing: border-box;
+}
+
+:root {
+    --clr-1:rgb(175, 149, 251);
+    --clr-2:#7337d3;
+    --clr-3:#5d009e;
+    --clr-4:#450566;
+    --clr-5:rgb(22, 2, 37);
+
+}
+
+body {
+    width: 100%;
+    margin: 0;
+    font-family: "Denk One", sans-serif;
+    background: linear-gradient(var(--clr-1), var(--clr-2));
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+h1 {
+    color: #ae95fb;
+    text-align: center;
+    font-size: 1.3rem;
+    padding-top: 50px;
+}
+
+.container {
+    width: 40%;
+    max-width: 800px;
+    height: 60%;
+    background: linear-gradient(var(--clr-3), var(--clr-4));
+    border-radius: 20px;
+    box-shadow:5px 5px 10px 1px #160225;
+    position: relative;
+}
+
+.container::before,
+.container::after {
+    content: "";
+    inset: -1em;
+    z-index: -1;
+    background:linear-gradient(
+        to top left,
+        var(--clr-3),
+        #fff
+    );
+    border-radius: inherit;
+    position: absolute;
+    filter: blur(3.5rem);
+}
+
+.search-area {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin: 30px;
+}
+
+.input {
+    text-align: center;
+    outline: none;
+    font-family: inherit;
+    padding: 2px;
+}
+
+.btn {
+    font-family: inherit;
+    padding: .5px 7px;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background: linear-gradient(var(--clr-1), #fff);
+    border: 1px solid var(--clr-5);
+}
+
+.hr {
+    width: 90%;
+    background:linear-gradient(
+        to right,
+        rgba(175, 149, 251, 0.01),
+        rgba(22, 2, 37, 0.7),
+        rgba(175, 149, 251, 0.01)
+    );
+    border: none;
+    height: 1px;
+}
+
+.city {
+    text-align: center;
+    color: #ae95fb;
+    margin-bottom: 50px;
+}
+
+.weather-info {
+    padding-left: 40px;
+    color: beige;
+}
