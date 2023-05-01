@@ -36,7 +36,6 @@ h1 {
 .container {
     width: 40%;
     max-width: 800px;
-    height: 60%;
     background: linear-gradient(var(--clr-3), var(--clr-4));
     border-radius: 20px;
     box-shadow:5px 5px 10px 1px #160225;
@@ -103,6 +102,6 @@ h1 {
 }
 
 .weather-info {
-    padding-left: 40px;
+    text-align: center;
     color: beige;
 }
